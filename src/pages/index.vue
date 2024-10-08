@@ -1,6 +1,16 @@
 <template>
   <v-container>
-    <h1 class="mb-6 text-center">Pokédex</h1>
+    <h1 class="mb-8 text-center">Pokédex</h1>
+    <v-card
+      class="mx-auto"
+      max-width="300"
+    >
+      <v-list
+        :items="pokemons"
+        item-title="name"
+        item-value="id"
+      ></v-list>
+    </v-card>
   </v-container>
 </template>
 
